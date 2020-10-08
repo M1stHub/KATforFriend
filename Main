@@ -1,0 +1,319 @@
+local ScreenGui = Instance.new("ScreenGui")
+local OpenFrame = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+local Main = Instance.new("Frame")
+local BeautyA = Instance.new("Frame")
+local BeautyB = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local Credits = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local Line1 = Instance.new("Frame")
+local Line2 = Instance.new("Frame")
+local CHEAT1 = Instance.new("TextButton")
+local ESP = Instance.new("TextButton")
+local CHEAT3 = Instance.new("TextButton")
+local CHEAT4 = Instance.new("TextButton")
+local CHEAT5 = Instance.new("TextButton")
+local CHEAT6 = Instance.new("TextButton")
+local CHEAT7 = Instance.new("TextButton")
+local CHEAT8 = Instance.new("TextButton")
+local CHEAT9 = Instance.new("TextButton")
+local CHEAT10 = Instance.new("TextButton")
+local CHEAT11 = Instance.new("TextButton")
+local CHEAT12 = Instance.new("TextButton")
+local CHEAT13 = Instance.new("TextButton")
+local CHEAT14 = Instance.new("TextButton")
+local CHEAT15 = Instance.new("TextButton")
+local Aimbot = Instance.new("TextButton")
+local CHEAT2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+OpenFrame.Name = "OpenFrame"
+OpenFrame.Parent = ScreenGui
+OpenFrame.Active = true
+OpenFrame.BackgroundColor3 = Color3.fromRGB(153, 0, 0)
+OpenFrame.BorderSizePixel = 0
+OpenFrame.Position = UDim2.new(0, 0, 0.481798738, 0)
+OpenFrame.Size = UDim2.new(0, 93, 0, 33)
+
+Open.Name = "Open"
+Open.Parent = OpenFrame
+Open.BackgroundColor3 = Color3.fromRGB(179, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.0860215053, 0, 0.0909090936, 0)
+Open.Size = UDim2.new(0, 76, 0, 27)
+Open.Font = Enum.Font.Cartoon
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+Open.MouseButton1Down:connect(function()
+Main.Visible = true
+OpenFrame.Visible = false
+end)
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(203, 0, 0)
+Main.Position = UDim2.new(0.297575325, 0, 0.154882997, 0)
+Main.Size = UDim2.new(0, 550, 0, 587)
+Main.Visible = false
+Main.Draggable = true
+
+BeautyA.Name = "BeautyA"
+BeautyA.Parent = Main
+BeautyA.Active = true
+BeautyA.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BeautyA.Position = UDim2.new(0, 0, -0.00387283717, 0)
+BeautyA.Size = UDim2.new(0, 550, 0, 53)
+
+BeautyB.Name = "BeautyB"
+BeautyB.Parent = Main
+BeautyB.Active = true
+BeautyB.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BeautyB.Position = UDim2.new(0, 0, 0.909184515, 0)
+BeautyB.Size = UDim2.new(0, 550, 0, 53)
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.918181837, 0, -0.00511073275, 0)
+Close.Size = UDim2.new(0, 45, 0, 50)
+Close.Font = Enum.Font.Cartoon
+Close.Text = "x"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+Close.MouseButton1Down:connect(function()
+OpenFrame.Visible = true
+Main.Visible = false
+end)
+
+Credits.Name = "Credits"
+Credits.Parent = Main
+Credits.Active = true
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0, 0, -0.000525832176, 0)
+Credits.Size = UDim2.new(0, 550, 0, 52)
+Credits.Font = Enum.Font.Cartoon
+Credits.Text = "KAT Exploit"
+Credits.TextColor3 = Color3.fromRGB(255, 0, 0)
+Credits.TextSize = 40.000
+Credits.TextWrapped = true
+
+TextLabel.Parent = Main
+TextLabel.Active = true
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 0.914295316, 0)
+TextLabel.Size = UDim2.new(0, 550, 0, 52)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "Made by Aentix"
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.TextSize = 40.000
+TextLabel.TextWrapped = true
+
+Line1.Name = "Line 1"
+Line1.Parent = Main
+Line1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line1.Position = UDim2.new(0.294545442, 0, 0.0885860324, 0)
+Line1.Size = UDim2.new(0, 3, 0, 477)
+
+Line2.Name = "Line 2"
+Line2.Parent = Main
+Line2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line2.Position = UDim2.new(0.682898641, 0, 0.0885860324, 0)
+Line2.Size = UDim2.new(0, 3, 0, 477)
+
+CHEAT1.Name = "CHEAT1"
+CHEAT1.Parent = Main
+CHEAT1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHEAT1.Position = UDim2.new(0.0363636315, 0, 0.136286199, 0)
+CHEAT1.Size = UDim2.new(0, 125, 0, 45)
+CHEAT1.Font = Enum.Font.Cartoon
+CHEAT1.Text = "\"CHEAT\""
+CHEAT1.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHEAT1.TextSize = 14.000
+
+ESP.Name = "ESP"
+ESP.Parent = Main
+ESP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ESP.Position = UDim2.new(0.370909065, 0, 0.136286199, 0)
+ESP.Size = UDim2.new(0, 125, 0, 45)
+ESP.Font = Enum.Font.Cartoon
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
+ESP.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/ESP", true))()
+end)
+
+CMDX.Name = "CMD-X"
+CMDX.Parent = Main
+CMDX.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CMDX.Position = UDim2.new(0.738181829, 0, 0.136286214, 0)
+CMDX.Size = UDim2.new(0, 125, 0, 45)
+CMDX.Font = Enum.Font.Cartoon
+CMDX.Text = "CMD-X"
+CMDX.TextColor3 = Color3.fromRGB(255, 255, 255)
+CMDX.TextSize = 14.000
+CMDX.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+CHEAT4.Name = "CHEAT4"
+CHEAT4.Parent = Main
+CHEAT4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHEAT4.Position = UDim2.new(0.0345454514, 0, 0.277683139, 0)
+CHEAT4.Size = UDim2.new(0, 125, 0, 45)
+CHEAT4.Font = Enum.Font.Cartoon
+CHEAT4.Text = "\"CHEAT\""
+CHEAT4.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHEAT4.TextSize = 14.000
+
+CHEAT5.Name = "CHEAT5"
+CHEAT5.Parent = Main
+CHEAT5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHEAT5.Position = UDim2.new(0.369090885, 0, 0.277683139, 0)
+CHEAT5.Size = UDim2.new(0, 125, 0, 45)
+CHEAT5.Font = Enum.Font.Cartoon
+CHEAT5.Text = "\"CHEAT\""
+CHEAT5.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHEAT5.TextSize = 14.000
+
+CHEAT6.Name = "CHEAT6"
+CHEAT6.Parent = Main
+CHEAT6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHEAT6.Position = UDim2.new(0.736363649, 0, 0.277683139, 0)
+CHEAT6.Size = UDim2.new(0, 125, 0, 45)
+CHEAT6.Font = Enum.Font.Cartoon
+CHEAT6.Text = "\"CHEAT\""
+CHEAT6.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHEAT6.TextSize = 14.000
+
+CHEAT7.Name = "CHEAT7"
+CHEAT7.Parent = Main
+CHEAT7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHEAT7.Position = UDim2.new(0.0345454514, 0, 0.417376488, 0)
+CHEAT7.Size = UDim2.new(0, 125, 0, 45)
+CHEAT7.Font = Enum.Font.Cartoon
+CHEAT7.Text = "\"CHEAT\""
+CHEAT7.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHEAT7.TextSize = 14.000
+
+CHEAT8.Name = "CHEAT8"
+CHEAT8.Parent = Main
+CHEAT8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHEAT8.Position = UDim2.new(0.369090885, 0, 0.417376488, 0)
+CHEAT8.Size = UDim2.new(0, 125, 0, 45)
+CHEAT8.Font = Enum.Font.Cartoon
+CHEAT8.Text = "\"CHEAT\""
+CHEAT8.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHEAT8.TextSize = 14.000
+
+CHEAT9.Name = "CHEAT9"
+CHEAT9.Parent = Main
+CHEAT9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHEAT9.Position = UDim2.new(0.736363649, 0, 0.417376518, 0)
+CHEAT9.Size = UDim2.new(0, 125, 0, 45)
+CHEAT9.Font = Enum.Font.Cartoon
+CHEAT9.Text = "\"CHEAT\""
+CHEAT9.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHEAT9.TextSize = 14.000
+
+CHEAT10.Name = "CHEAT10"
+CHEAT10.Parent = Main
+CHEAT10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHEAT10.Position = UDim2.new(0.0345454514, 0, 0.557069898, 0)
+CHEAT10.Size = UDim2.new(0, 125, 0, 45)
+CHEAT10.Font = Enum.Font.Cartoon
+CHEAT10.Text = "\"CHEAT\""
+CHEAT10.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHEAT10.TextSize = 14.000
+
+CHEAT11.Name = "CHEAT11"
+CHEAT11.Parent = Main
+CHEAT11.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHEAT11.Position = UDim2.new(0.369090885, 0, 0.557069898, 0)
+CHEAT11.Size = UDim2.new(0, 125, 0, 45)
+CHEAT11.Font = Enum.Font.Cartoon
+CHEAT11.Text = "\"CHEAT\""
+CHEAT11.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHEAT11.TextSize = 14.000
+
+CHEAT12.Name = "CHEAT12"
+CHEAT12.Parent = Main
+CHEAT12.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHEAT12.Position = UDim2.new(0.736363649, 0, 0.557069898, 0)
+CHEAT12.Size = UDim2.new(0, 125, 0, 45)
+CHEAT12.Font = Enum.Font.Cartoon
+CHEAT12.Text = "\"CHEAT\""
+CHEAT12.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHEAT12.TextSize = 14.000
+
+CHEAT13.Name = "CHEAT13"
+CHEAT13.Parent = Main
+CHEAT13.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHEAT13.Position = UDim2.new(0.0363636315, 0, 0.700170338, 0)
+CHEAT13.Size = UDim2.new(0, 125, 0, 45)
+CHEAT13.Font = Enum.Font.Cartoon
+CHEAT13.Text = "\"CHEAT\""
+CHEAT13.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHEAT13.TextSize = 14.000
+
+CHEAT14.Name = "CHEAT14"
+CHEAT14.Parent = Main
+CHEAT14.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHEAT14.Position = UDim2.new(0.370909065, 0, 0.700170338, 0)
+CHEAT14.Size = UDim2.new(0, 125, 0, 45)
+CHEAT14.Font = Enum.Font.Cartoon
+CHEAT14.Text = "\"CHEAT\""
+CHEAT14.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHEAT14.TextSize = 14.000
+
+CHEAT15.Name = "CHEAT15"
+CHEAT15.Parent = Main
+CHEAT15.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHEAT15.Position = UDim2.new(0.738181829, 0, 0.700170338, 0)
+CHEAT15.Size = UDim2.new(0, 125, 0, 45)
+CHEAT15.Font = Enum.Font.Cartoon
+CHEAT15.Text = "\"CHEAT\""
+CHEAT15.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHEAT15.TextSize = 14.000
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Main
+Aimbot.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Aimbot.Position = UDim2.new(0.0363636315, 0, 0.136286199, 0)
+Aimbot.Size = UDim2.new(0, 125, 0, 45)
+Aimbot.Font = Enum.Font.Cartoon
+Aimbot.Text = "Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.TextSize = 14.000
+Aimbot.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/Aimbot", true))()
+end)
+
+CHEAT2.Name = "CHEAT2"
+CHEAT2.Parent = Main
+CHEAT2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHEAT2.Position = UDim2.new(0.370909065, 0, 0.136286199, 0)
+CHEAT2.Size = UDim2.new(0, 125, 0, 45)
+CHEAT2.Font = Enum.Font.Cartoon
+CHEAT2.Text = "ESP"
+CHEAT2.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHEAT2.TextSize = 14.000
