@@ -1,3 +1,8 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local ScreenGui = Instance.new("ScreenGui")
 local OpenFrame = Instance.new("Frame")
 local Open = Instance.new("TextButton")
@@ -11,10 +16,10 @@ local Line1 = Instance.new("Frame")
 local Line2 = Instance.new("Frame")
 local CHEAT1 = Instance.new("TextButton")
 local ESP = Instance.new("TextButton")
-local CHEAT3 = Instance.new("TextButton")
-local CHEAT4 = Instance.new("TextButton")
-local CHEAT5 = Instance.new("TextButton")
-local CHEAT6 = Instance.new("TextButton")
+local CMDX = Instance.new("TextButton")
+local INFJUMP = Instance.new("TextButton")
+local RAYMETHOD = Instance.new("TextButton")
+local FPSBOOSTER = Instance.new("TextButton")
 local CHEAT7 = Instance.new("TextButton")
 local CHEAT8 = Instance.new("TextButton")
 local CHEAT9 = Instance.new("TextButton")
@@ -29,7 +34,7 @@ local CHEAT2 = Instance.new("TextButton")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game.GuiCore
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 OpenFrame.Name = "OpenFrame"
@@ -175,35 +180,45 @@ CMDX.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 end)
 
-CHEAT4.Name = "CHEAT4"
-CHEAT4.Parent = Main
-CHEAT4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-CHEAT4.Position = UDim2.new(0.0345454514, 0, 0.277683139, 0)
-CHEAT4.Size = UDim2.new(0, 125, 0, 45)
-CHEAT4.Font = Enum.Font.Cartoon
-CHEAT4.Text = "\"CHEAT\""
-CHEAT4.TextColor3 = Color3.fromRGB(255, 255, 255)
-CHEAT4.TextSize = 14.000
 
-CHEAT5.Name = "CHEAT5"
-CHEAT5.Parent = Main
-CHEAT5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-CHEAT5.Position = UDim2.new(0.369090885, 0, 0.277683139, 0)
-CHEAT5.Size = UDim2.new(0, 125, 0, 45)
-CHEAT5.Font = Enum.Font.Cartoon
-CHEAT5.Text = "\"CHEAT\""
-CHEAT5.TextColor3 = Color3.fromRGB(255, 255, 255)
-CHEAT5.TextSize = 14.000
+INFJUMP.Name = "INF JUMP"
+INFJUMP.Parent = Main
+INFJUMP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+INFJUMP.Position = UDim2.new(0.0345454514, 0, 0.277683139, 0)
+INFJUMP.Size = UDim2.new(0, 125, 0, 45)
+INFJUMP.Font = Enum.Font.Cartoon
+INFJUMP.Text = "INF JUMP"
+INFJUMP.TextColor3 = Color3.fromRGB(255, 255, 255)
+INFJUMP.TextSize = 14.000
+INFJUMP.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/InfJump", true))()
+end)
 
-CHEAT6.Name = "CHEAT6"
-CHEAT6.Parent = Main
-CHEAT6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-CHEAT6.Position = UDim2.new(0.736363649, 0, 0.277683139, 0)
-CHEAT6.Size = UDim2.new(0, 125, 0, 45)
-CHEAT6.Font = Enum.Font.Cartoon
-CHEAT6.Text = "\"CHEAT\""
-CHEAT6.TextColor3 = Color3.fromRGB(255, 255, 255)
-CHEAT6.TextSize = 14.000
+RAYMETHOD.Name = "RAYMETHOD"
+RAYMETHOD.Parent = Main
+RAYMETHOD.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RAYMETHOD.Position = UDim2.new(0.369090885, 0, 0.277683139, 0)
+RAYMETHOD.Size = UDim2.new(0, 125, 0, 45)
+RAYMETHOD.Font = Enum.Font.Cartoon
+RAYMETHOD.Text = "Check Your Ray Status"
+RAYMETHOD.TextColor3 = Color3.fromRGB(255, 255, 255)
+RAYMETHOD.TextSize = 12.000
+RAYMETHOD.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yesok3877/Celestial-Silent-Aim/master/Auto-Detection_Script", true))()
+end)
+
+FPSBOOSTER.Name = "FPS BOOSTER"
+FPSBOOSTER.Parent = Main
+FPSBOOSTER.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FPSBOOSTER.Position = UDim2.new(0.736363649, 0, 0.277683139, 0)
+FPSBOOSTER.Size = UDim2.new(0, 125, 0, 45)
+FPSBOOSTER.Font = Enum.Font.Cartoon
+FPSBOOSTER.Text = "FPS Booster"
+FPSBOOSTER.TextColor3 = Color3.fromRGB(255, 255, 255)
+FPSBOOSTER.TextSize = 14.000
+FPSBOOSTER.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/FPS", true))()
+end)
 
 CHEAT7.Name = "CHEAT7"
 CHEAT7.Parent = Main
@@ -305,7 +320,13 @@ Aimbot.Text = "Aimbot"
 Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
 Aimbot.TextSize = 14.000
 Aimbot.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/Aimbot", true))()
+getgenv().SelectedPart = "Head"
+getgenv().VisibiltyCheck = false
+getgenv().TargetESP = false
+getgenv().FOV = 250
+getgenv().CircleVisibility = true
+getgenv().Distance = 500
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/AutoInput", true))(
 end)
 
 CHEAT2.Name = "CHEAT2"
