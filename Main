@@ -61,8 +61,8 @@ Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
 Close.MouseButton1Down:connect(function()
-OpenFrame.Visible = true
-Main.Visible = false
+	OpenFrame.Visible = true
+	Main.Visible = false
 end)
 
 
@@ -104,7 +104,69 @@ Aimbot.TextScaled = true
 Aimbot.TextSize = 14.000
 Aimbot.TextWrapped = true
 Aimbot.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/Aim", true))()
+	--Subscribe to Ducky Exploits
+	function nearestPlayerToRay()
+		local dist = math.huge
+		local ray
+		
+		for i,v in pairs(game.Players:GetChildren()) do
+			if v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Humanoid") and v.Character:FindFirstChild("Head") and not v.Character:FindFirstChild("ForceField") then
+				if v.Character.Humanoid.Health > 0 and v.Character:FindFirstChild("Head") then -- needed..
+					local newVec = (v.Character.Head.Position - game.Players.LocalPlayer.Character.Head.Position)
+					if newVec.magnitude < dist then
+						local toRay = Ray.new(game.Players.LocalPlayer.Character.Head.Position, newVec)
+						if not workspace:FindPartOnRayWithIgnoreList(toRay, {game.Players.LocalPlayer.Character, v.Character, workspace.WorldIgnore, workspace.CurrentCamera}) then
+							dist = newVec.magnitude
+							ray = toRay
+						end
+					end
+				end
+			end
+		end
+		return ray
+	end
+	
+	local ray
+	
+	function init()
+		local knife = game.Players.LocalPlayer.Character:WaitForChild("Knife")
+		local scr = getsenv(knife.KnifeServer.KnifeClient)
+		if scr then
+			local ir = scr.inputReleased
+			local u7 = debug.getupvalue(ir, 2)
+			local cam = debug.getupvalue(ir, 5)
+			debug.setupvalue(ir, 5, setmetatable({}, {
+				__index = function(t,k)
+					if k == "ScreenPointToRay" then
+						if ray ~= nil then
+							return function() return ray end
+						end
+					end
+					return cam[k]
+				end
+			}))
+			
+			
+			while wait(.1) do
+				if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+					break    
+				end
+				ray = nearestPlayerToRay()
+				if ray then
+					scr.inputDown()
+					u7.ChargeStart = -math.huge
+					ir()
+				end
+			end
+		end
+	end
+	
+	init()
+	game.Players.LocalPlayer.CharacterAdded:connect(function()
+		print("hi")
+		wait()
+		init()
+	end)
 end)
 
 ESP.Name = "ESP"
@@ -120,7 +182,7 @@ ESP.TextScaled = true
 ESP.TextSize = 14.000
 ESP.TextWrapped = true
 ESP.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/ESP", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/ESP", true))()
 end)
 
 CMDX.Name = "CMD-X"
@@ -136,7 +198,7 @@ CMDX.TextScaled = true
 CMDX.TextSize = 14.000
 CMDX.TextWrapped = true
 CMDX.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 end)
 
 INFJUMP.Name = "INF JUMP"
@@ -152,7 +214,7 @@ INFJUMP.TextScaled = true
 INFJUMP.TextSize = 14.000
 INFJUMP.TextWrapped = true
 INFJUMP.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/InfJump", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/InfJump", true))()
 end)
 
 FPSBOOSTER.Name = "FPSBOOSTER"
@@ -168,7 +230,7 @@ FPSBOOSTER.TextScaled = true
 FPSBOOSTER.TextSize = 14.000
 FPSBOOSTER.TextWrapped = true
 FPSBOOSTER.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/FPS", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/FPS", true))()
 end)
 
 RAYCHECKER.Name = "RAYCHECKER"
@@ -178,14 +240,12 @@ RAYCHECKER.BorderSizePixel = 0
 RAYCHECKER.Position = UDim2.new(0.0816326514, 0, 0.30334729, 0)
 RAYCHECKER.Size = UDim2.new(0, 89, 0, 43)
 RAYCHECKER.Font = Enum.Font.Cartoon
-RAYCHECKER.Text = "RAY CHECKER FOR AIMBOT"
+RAYCHECKER.Text = ""
 RAYCHECKER.TextColor3 = Color3.fromRGB(0, 0, 0)
 RAYCHECKER.TextScaled = true
 RAYCHECKER.TextSize = 14.000
 RAYCHECKER.TextWrapped = true
-RAYCHECKER.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/yesok3877/Celestial-Silent-Aim/master/Auto-Detection_Script", true))()
-end)
+
 
 CHEAT8.Name = "CHEAT8"
 CHEAT8.Parent = Main
@@ -297,6 +357,6 @@ Open.TextScaled = true
 Open.TextSize = 14.000
 Open.TextWrapped = true
 Open.MouseButton1Down:connect(function()
-Main.Visible = true
-OpenFrame.Visible = false
+	Main.Visible = true
+	OpenFrame.Visible = false
 end)
