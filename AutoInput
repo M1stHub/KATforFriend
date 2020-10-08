@@ -1,15 +1,3 @@
---[[ // CREDITS \\
-
-    YESOK FOR DEVELOPMENT
-https://v3rmillion.net/member.php?action=profile&uid=514695
-
-    JAN FOR ESP
-https://v3rmillion.net/member.php?action=profile&uid=557102
-
-    CRISHOUX FOR STRUCID/NERF-FPS FUNCTIONS
-https://v3rmillion.net/member.php?action=profile&uid=490270
---]]
-
 warn("Loading...")
 
 local Players = game:GetService("Players")
@@ -78,7 +66,7 @@ CreditsLabel.BackgroundTransparency = 1
 CreditsLabel.Position = UDim2.new(0.428000088, 0, 0.893000005, 0)
 CreditsLabel.Size = UDim2.new(0, 43, 0, 15)
 CreditsLabel.Font = Enum.Font.Gotham
-CreditsLabel.Text = "Celestial Silent Aim | yesok#3877"
+CreditsLabel.Text = "Silent Aimbot for KAT | Aentix"
 CreditsLabel.TextColor3 = Color3.new(0.576471, 0.576471, 0.576471)
 CreditsLabel.TextSize = 10
 
