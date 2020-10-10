@@ -1,0 +1,507 @@
+local Main = Instance.new("ScreenGui")
+local Login = Instance.new("Frame")
+local Design = Instance.new("Frame")
+local DesignLine = Instance.new("Frame")
+local CloseGui = Instance.new("TextBox")
+local GuiName = Instance.new("TextLabel")
+local UsernameLabel = Instance.new("TextLabel")
+local PasswordLabel = Instance.new("TextLabel")
+local UsernameTextBox = Instance.new("TextBox")
+local PasswordTextBox = Instance.new("TextBox")
+local LoginButton = Instance.new("TextButton")
+local Logo = Instance.new("ImageLabel")
+local GameHub = Instance.new("Frame")
+local ImageButton = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+local OpenButton = Instance.new("TextButton")
+local CloseButton = Instance.new("TextButton")
+local Logo_2 = Instance.new("ImageLabel")
+local KAT = Instance.new("Frame")
+local Line = Instance.new("Frame")
+local MainName = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local VersionNumber = Instance.new("TextLabel")
+local Logo_3 = Instance.new("ImageLabel")
+local Btools = Instance.new("TextButton")
+local Infjump = Instance.new("TextButton")
+local ESP = Instance.new("TextButton")
+local CMDX = Instance.new("TextButton")
+local DarkDex = Instance.new("TextButton")
+local Aimbot = Instance.new("TextButton")
+
+--Properties:
+
+Main.Name = "Main"
+Main.Parent = game.CoreGui
+Main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Login.Name = "Login"
+Login.Parent = Main
+Login.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Login.Position = UDim2.new(0.158752665, 0, 0.209850103, 0)
+Login.Size = UDim2.new(0, 506, 0, 521)
+Login.Active = true
+Login.Draggable = true
+
+
+Design.Name = "Design"
+Design.Parent = Login
+Design.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Design.Size = UDim2.new(0, 506, 0, 33)
+
+DesignLine.Name = "DesignLine"
+DesignLine.Parent = Login
+DesignLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DesignLine.BorderColor3 = Color3.fromRGB(255, 255, 255)
+DesignLine.Position = UDim2.new(0.144268781, 0, 0.213051826, 0)
+DesignLine.Size = UDim2.new(0, 359, 0, 1)
+
+CloseGui.Name = "CloseGui"
+CloseGui.Parent = Login
+CloseGui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CloseGui.BackgroundTransparency = 1.000
+CloseGui.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CloseGui.Position = UDim2.new(0.905138314, 0, 0, 0)
+CloseGui.Size = UDim2.new(0, 48, 0, 33)
+CloseGui.Font = Enum.Font.SourceSans
+CloseGui.Text = ""
+CloseGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseGui.TextScaled = true
+CloseGui.TextSize = 14.000
+CloseGui.TextWrapped = true
+
+GuiName.Name = "GuiName"
+GuiName.Parent = Login
+GuiName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuiName.BackgroundTransparency = 1.000
+GuiName.Position = UDim2.new(0.294466406, 0, 0.0622648783, 0)
+GuiName.Size = UDim2.new(0, 208, 0, 79)
+GuiName.Font = Enum.Font.Cartoon
+GuiName.Text = "Shadow"
+GuiName.TextColor3 = Color3.fromRGB(255, 0, 0)
+GuiName.TextScaled = true
+GuiName.TextSize = 14.000
+GuiName.TextWrapped = true
+
+UsernameLabel.Name = "UsernameLabel"
+UsernameLabel.Parent = Login
+UsernameLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UsernameLabel.BackgroundTransparency = 1.000
+UsernameLabel.Position = UDim2.new(0, 0, 0.341650665, 0)
+UsernameLabel.Size = UDim2.new(0, 189, 0, 50)
+UsernameLabel.Font = Enum.Font.SourceSans
+UsernameLabel.Text = "Username :"
+UsernameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+UsernameLabel.TextScaled = true
+UsernameLabel.TextSize = 14.000
+UsernameLabel.TextWrapped = true
+
+PasswordLabel.Name = "PasswordLabel"
+PasswordLabel.Parent = Login
+PasswordLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PasswordLabel.BackgroundTransparency = 1.000
+PasswordLabel.Position = UDim2.new(0, 0, 0.639155507, 0)
+PasswordLabel.Size = UDim2.new(0, 189, 0, 50)
+PasswordLabel.Font = Enum.Font.SourceSans
+PasswordLabel.Text = "Password :"
+PasswordLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+PasswordLabel.TextScaled = true
+PasswordLabel.TextSize = 14.000
+PasswordLabel.TextWrapped = true
+
+UsernameTextBox.Name = "UsernameTextBox"
+UsernameTextBox.Parent = Login
+UsernameTextBox.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+UsernameTextBox.BorderColor3 = Color3.fromRGB(255, 255, 255)
+UsernameTextBox.Position = UDim2.new(0.373517781, 0, 0.341650665, 0)
+UsernameTextBox.Size = UDim2.new(0, 307, 0, 50)
+UsernameTextBox.Font = Enum.Font.SourceSans
+UsernameTextBox.Text = "Enter Username"
+UsernameTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+UsernameTextBox.TextScaled = true
+UsernameTextBox.TextSize = 14.000
+UsernameTextBox.TextWrapped = true
+
+PasswordTextBox.Name = "PasswordTextBox"
+PasswordTextBox.Parent = Login
+PasswordTextBox.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+PasswordTextBox.BorderColor3 = Color3.fromRGB(255, 255, 255)
+PasswordTextBox.Position = UDim2.new(0.3853755, 0, 0.639155447, 0)
+PasswordTextBox.Size = UDim2.new(0, 291, 0, 50)
+PasswordTextBox.Font = Enum.Font.SourceSans
+PasswordTextBox.Text = "Enter Password"
+PasswordTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+PasswordTextBox.TextScaled = true
+PasswordTextBox.TextSize = 14.000
+PasswordTextBox.TextWrapped = true
+
+LoginButton.Name = "LoginButton"
+LoginButton.Parent = Login
+LoginButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+LoginButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+LoginButton.Position = UDim2.new(0.30039525, 0, 0.821497142, 0)
+LoginButton.Size = UDim2.new(0, 200, 0, 50)
+LoginButton.Font = Enum.Font.SourceSans
+LoginButton.Text = "Login"
+LoginButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoginButton.TextScaled = true
+LoginButton.TextSize = 14.000
+LoginButton.TextWrapped = true
+LoginButton.MouseButton1Down:connect(function()
+	if UsernameTextBox.Text == "Aentix" and PasswordTextBox.Text == "Famolsen14" then
+		Login.Visible = false
+		GameHub.Visible = true
+	else
+		if UsernameTextBox.Text == "lemonslice" and PasswordTextBox.Text == "mmkm12" then
+			Login.Visible = false
+			GameHub.Visible = true
+	else
+		if UsernameTextBox.Text == "onyx" and PasswordTextBox.Text == "onyx965" then
+			Login.Visible = false
+			GameHub.Visible = true
+			end
+		end
+	end
+end)
+
+Logo.Name = "Logo"
+Logo.Parent = Login
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(0.939723313, 0, 0, 0)
+Logo.Size = UDim2.new(0, 30, 0, 30)
+Logo.Image = "http://www.roblox.com/asset/?id=5808316236"
+
+GameHub.Name = "GameHub"
+GameHub.Parent = Main
+GameHub.Active = true
+GameHub.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+GameHub.BorderColor3 = Color3.fromRGB(255, 255, 255)
+GameHub.Position = UDim2.new(0.216158763, 0, 0.232334048, 0)
+GameHub.Size = UDim2.new(0, 800, 0, 500)
+GameHub.Visible = false
+GameHub.Active = true
+GameHub.Draggable = true
+
+
+ImageButton.Parent = GameHub
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.Position = UDim2.new(0.0249999985, 0, 0.0400000028, 0)
+ImageButton.Size = UDim2.new(0, 100, 0, 100)
+ImageButton.Image = "http://www.roblox.com/asset/?id=5808247229"
+ImageButton.MouseButton1Down:connect(function()
+GameHub.Visible = false
+KAT.Visible = true
+end)
+
+TextLabel.Parent = ImageButton
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0599999987, 0, 1, 0)
+TextLabel.Size = UDim2.new(0, 88, 0, 31)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "KAT"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = GameHub
+OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.BackgroundTransparency = 1.000
+OpenButton.Position = UDim2.new(-0.443749994, 0, 0.449999988, 0)
+OpenButton.Size = UDim2.new(0, 200, 0, 50)
+OpenButton.Font = Enum.Font.SourceSans
+OpenButton.Text = "OPEN"
+OpenButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.TextScaled = true
+OpenButton.TextSize = 14.000
+OpenButton.TextWrapped = true
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = GameHub
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.Position = UDim2.new(-0.435000002, 0, 0.449999988, 0)
+CloseButton.Size = UDim2.new(0, 200, 0, 50)
+CloseButton.Visible = false
+CloseButton.Font = Enum.Font.SourceSans
+CloseButton.Text = "CLOSE"
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14.000
+CloseButton.TextWrapped = true
+
+Logo_2.Name = "Logo"
+Logo_2.Parent = GameHub
+Logo_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo_2.BackgroundTransparency = 1.000
+Logo_2.Position = UDim2.new(0.961818159, 0, 0, 0)
+Logo_2.Size = UDim2.new(0, 30, 0, 30)
+Logo_2.Image = "http://www.roblox.com/asset/?id=5808316236"
+
+KAT.Name = "KAT"
+KAT.Parent = Main
+KAT.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+KAT.BorderColor3 = Color3.fromRGB(255, 255, 255)
+KAT.Position = UDim2.new(0.343761146, 0, 0.191586316, 0)
+KAT.Size = UDim2.new(0, 440, 0, 576)
+KAT.Visible = false
+KAT.Active = true
+KAT.Draggable = true
+
+
+Line.Name = "Line"
+Line.Parent = KAT
+Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line.Position = UDim2.new(0.24545455, 0, 0, 0)
+Line.Size = UDim2.new(0, 2, 0, 576)
+
+MainName.Name = "MainName"
+MainName.Parent = KAT
+MainName.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainName.BorderColor3 = Color3.fromRGB(255, 255, 255)
+MainName.Size = UDim2.new(0, 108, 0, 124)
+MainName.Font = Enum.Font.Cartoon
+MainName.Text = "KAT Exploit"
+MainName.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainName.TextSize = 25.000
+MainName.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = KAT
+Credits.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credits.Position = UDim2.new(0, 0, 0.154513896, 0)
+Credits.Size = UDim2.new(0, 108, 0, 53)
+Credits.Font = Enum.Font.Cartoon
+Credits.Text = "Made by Shadow"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 15.000
+Credits.TextWrapped = true
+
+VersionNumber.Name = "VersionNumber"
+VersionNumber.Parent = KAT
+VersionNumber.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+VersionNumber.BackgroundTransparency = 1.000
+VersionNumber.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VersionNumber.Position = UDim2.new(-0.0227272734, 0, 0.967013896, 0)
+VersionNumber.Size = UDim2.new(0, 34, 0, 25)
+VersionNumber.Font = Enum.Font.Cartoon
+VersionNumber.Text = "v1"
+VersionNumber.TextColor3 = Color3.fromRGB(255, 255, 255)
+VersionNumber.TextSize = 15.000
+VersionNumber.TextWrapped = true
+
+Logo_3.Name = "Logo"
+Logo_3.Parent = KAT
+Logo_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo_3.BackgroundTransparency = 1.000
+Logo_3.Position = UDim2.new(0.931818187, 0, 0, 0)
+Logo_3.Size = UDim2.new(0, 30, 0, 30)
+Logo_3.Image = "http://www.roblox.com/asset/?id=5808316236"
+
+Btools.Name = "Btools"
+Btools.Parent = KAT
+Btools.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Btools.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Btools.Position = UDim2.new(0.309090942, 0, 0.144097209, 0)
+Btools.Size = UDim2.new(0, 64, 0, 35)
+Btools.Font = Enum.Font.Cartoon
+Btools.Text = "Btools"
+Btools.TextColor3 = Color3.fromRGB(255, 255, 255)
+Btools.TextSize = 18.000
+Btools.TextWrapped = true
+Btools.MouseButton1Down:connect(function()
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	
+	-- Objects
+	
+	local ScreenGui = Instance.new("ScreenGui")
+	local TextButton = Instance.new("TextButton")
+	local On = Instance.new("StringValue")
+	
+	-- Properties
+	
+	ScreenGui.Parent = player.PlayerGui
+	
+	TextButton.Parent = ScreenGui
+	TextButton.BackgroundColor3 = Color3.new(0.784314, 0.784314, 0.784314)
+	TextButton.BorderSizePixel = 0
+	TextButton.Position = UDim2.new(0, 0, 0.455743879, 0)
+	TextButton.Size = UDim2.new(0, 186, 0, 35)
+	TextButton.Font = Enum.Font.SourceSans
+	TextButton.Text = "Btools (Off)"
+	TextButton.TextColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+	TextButton.TextScaled = true
+	TextButton.TextSize = 14
+	TextButton.TextWrapped = true
+	
+	
+	On.Parent = TextButton
+	On.Value = "Off"
+	
+	-- Scripts 
+	
+	TextButton.MouseButton1Up:Connect(function()
+		if On.Value == "Off" then
+			On.Value = "On"
+			TextButton.Text = "Btools (On)"
+		else
+			On.Value = "Off"
+			TextButton.Text = "Btools (Off)"
+		end
+	end)
+	
+	mouse.Button1Up:Connect(function()
+		if On.Value == "Off" then
+			print('btools off')
+		else
+			if mouse.Target.Locked == true then
+				mouse.Target:Destroy()
+			else
+				mouse.Target:Destroy()
+			end
+		end
+	end)
+end)
+
+Infjump.Name = "Infjump"
+Infjump.Parent = KAT
+Infjump.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Infjump.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Infjump.Position = UDim2.new(0.561363578, 0, 0.144097209, 0)
+Infjump.Size = UDim2.new(0, 64, 0, 35)
+Infjump.Font = Enum.Font.Cartoon
+Infjump.Text = "InfJump"
+Infjump.TextColor3 = Color3.fromRGB(255, 255, 255)
+Infjump.TextSize = 18.000
+Infjump.TextWrapped = true
+Infjump.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/InfJump", true))()
+end)
+
+ESP.Name = "ESP"
+ESP.Parent = KAT
+ESP.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ESP.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ESP.Position = UDim2.new(0.811363697, 0, 0.0520833284, 0)
+ESP.Size = UDim2.new(0, 64, 0, 35)
+ESP.Font = Enum.Font.Cartoon
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextSize = 18.000
+ESP.TextWrapped = true
+ESP.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EzSnipes26/KATforFriend/main/ESP", true))()
+end)
+
+CMDX.Name = "CMDX"
+CMDX.Parent = KAT
+CMDX.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+CMDX.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CMDX.Position = UDim2.new(0.561363578, 0, 0.0520833284, 0)
+CMDX.Size = UDim2.new(0, 64, 0, 35)
+CMDX.Font = Enum.Font.Cartoon
+CMDX.Text = "CMD-X"
+CMDX.TextColor3 = Color3.fromRGB(255, 255, 255)
+CMDX.TextSize = 18.000
+CMDX.TextWrapped = true
+CMDX.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+DarkDex.Name = "DarkDex"
+DarkDex.Parent = KAT
+DarkDex.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+DarkDex.BorderColor3 = Color3.fromRGB(255, 255, 255)
+DarkDex.Position = UDim2.new(0.811363697, 0, 0.144097224, 0)
+DarkDex.Size = UDim2.new(0, 64, 0, 35)
+DarkDex.Font = Enum.Font.Cartoon
+DarkDex.Text = "DarkDex"
+DarkDex.TextColor3 = Color3.fromRGB(255, 255, 255)
+DarkDex.TextSize = 18.000
+DarkDex.TextWrapped = true
+DarkDex.MouseButton1Down:connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/iuQPQq4M"))()
+end)
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = KAT
+Aimbot.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Aimbot.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.Position = UDim2.new(0.309090942, 0, 0.0520833358, 0)
+Aimbot.Size = UDim2.new(0, 64, 0, 35)
+Aimbot.Font = Enum.Font.Cartoon
+Aimbot.Text = "Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.TextSize = 18.000
+Aimbot.TextWrapped = true
+Aimbot.MouseButton1Down:connect(function()
+	--Subscribe to Ducky Exploits
+	function nearestPlayerToRay()
+		local dist = math.huge
+		local ray
+		
+		for i,v in pairs(game.Players:GetChildren()) do
+			if v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Humanoid") and v.Character:FindFirstChild("Head") and not v.Character:FindFirstChild("ForceField") then
+				if v.Character.Humanoid.Health > 0 and v.Character:FindFirstChild("Head") then -- needed..
+					local newVec = (v.Character.Head.Position - game.Players.LocalPlayer.Character.Head.Position)
+					if newVec.magnitude < dist then
+						local toRay = Ray.new(game.Players.LocalPlayer.Character.Head.Position, newVec)
+						if not workspace:FindPartOnRayWithIgnoreList(toRay, {game.Players.LocalPlayer.Character, v.Character, workspace.WorldIgnore, workspace.CurrentCamera}) then
+							dist = newVec.magnitude
+							ray = toRay
+						end
+					end
+				end
+			end
+		end
+		return ray
+	end
+	
+	local ray
+	
+	function init()
+		local knife = game.Players.LocalPlayer.Character:WaitForChild("Knife")
+		local scr = getsenv(knife.KnifeServer.KnifeClient)
+		if scr then
+			local ir = scr.inputReleased
+			local u7 = debug.getupvalue(ir, 2)
+			local cam = debug.getupvalue(ir, 5)
+			debug.setupvalue(ir, 5, setmetatable({}, {
+				__index = function(t,k)
+					if k == "ScreenPointToRay" then
+						if ray ~= nil then
+							return function() return ray end
+						end
+					end
+					return cam[k]
+				end
+			}))
+			
+			
+			while wait(.1) do
+				if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+					break    
+				end
+				ray = nearestPlayerToRay()
+				if ray then
+					scr.inputDown()
+					u7.ChargeStart = -math.huge
+					ir()
+				end
+			end
+		end
+	end
+	
+	init()
+	game.Players.LocalPlayer.CharacterAdded:connect(function()
+		print("hi")
+		wait()
+		init()
+	end)
+end)
